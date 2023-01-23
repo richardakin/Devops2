@@ -1,0 +1,8 @@
+version: 2.1
+jobs:
+  build:
+      docker:
+        - image: circleci/python@2.0.3
+      steps:
+        - checkout
+        - run: ls
