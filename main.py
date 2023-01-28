@@ -1,4 +1,7 @@
+#google.com
+import requests
 
+requests.get("google.com")
 print("Welcome to DevOps Bank")
 balance = 500
 
