@@ -6,7 +6,7 @@ jobs:
       steps:
         - checkout
         - run: ls
-        - tar -cf ourcode.tar Devops2/main.py
+        - run: tar -cf ourcode.tar Devops2/main.py
   deploy:
     docker:
       - image: circleci/python
