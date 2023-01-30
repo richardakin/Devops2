@@ -11,7 +11,8 @@ jobs:
         - run: pwd
         - persist_to_workspace:
             root: .
-            path: ourcode.tar
+            paths:
+              - ourcode.tar
   deploy:
     docker:
       - image: circleci/python
