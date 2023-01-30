@@ -7,6 +7,8 @@ jobs:
         - checkout
         - run: ls
         - run: tar -cf ourcode.tar ./main.py
+        - run: ls
+        - run: pwd
         - persist_to_workspace:
             root: .
             path: ourcode.tar
