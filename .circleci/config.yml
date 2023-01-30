@@ -10,7 +10,7 @@ jobs:
     docker:
       - image: circleci/python
     steps:
-      - add-ssh-keys:
+      - add_ssh_keys:
          fingerprints:
            - "1b:b7:f0:68:bc:10:62:e2:2a:8e:3d:da:bb:15:4a:e6"
       - run:  ssh ubuntu@ec2-18-206-40-133.compute-1.amazonaws.com "ls"
