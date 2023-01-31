@@ -13,6 +13,7 @@ jobs:
             root: .
             paths:
               - ourcode.tar
+              - test.py
   test:
     docker:
        - image: circleci/python
