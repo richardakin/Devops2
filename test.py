@@ -51,4 +51,4 @@ assert result == 4, "Balance should be 4"
 withdraw=8
 result=balance - withdraw
 # write test here
-assert result == 3, "Balance should be 2"
+assert result == 2, "Balance should be 2"
