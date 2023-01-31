@@ -13,6 +13,14 @@ jobs:
             root: .
             paths:
               - ourcode.tar
+  test:
+    docker:
+       - image: circleci/python
+    steps:
+      - attach_workspace:
+          at: .
+      - run: python test.py
+
   deploy:
     docker:
       - image: circleci/python
@@ -34,6 +42,9 @@ workflows:
   akin-pipeline:
     jobs:
       - build
-      - deploy:
+      - test:
           requires:
             - build
+      - deploy:
+          requires:
+            - test
